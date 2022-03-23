@@ -1,0 +1,19 @@
+.breadcrumb li {
+    display: inline;
+    color:rgb(255, 255, 255);
+    background-color:ForestGreen;
+    padding:10px;
+    width: 100%;
+  }
+  .breadcrumb li +li.location  ::before{
+  content:">";
+  }
+  .breadcrumb li.attribute a {
+    color: red;
+  }
+  .breadcrumb li.attribute::after {
+    content: "x";
+    color: white;
+    font-size: 20px;
+    vertical-align: super;
+  }
